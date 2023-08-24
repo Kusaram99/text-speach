@@ -1,12 +1,12 @@
 import React from "react";
-import Nav from "./components/nav/Nav";
-import SectionComp from "./components/sections/SectionComp";
+import Nav from "./components/nav/Nav"; 
+import GeneratorBox from "./components/sections/generatorbox/GeneratorBox";
 
 function App() {
   return (
     <div>
       <Nav/>
-      <SectionComp/>
+      <GeneratorBox/>
     </div>
   );
 }

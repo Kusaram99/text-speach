@@ -26,7 +26,7 @@ const Nav = () => {
   return (
     <header className='my-5'>
       <div className='w-full lg:w-10/12 m-auto'>
-        <div className='relative flex justify-between py-5 px-12 bg-slate-200 rounded-lg'>
+        <div className='relative flex justify-between py-5 px-5 sm:px-12 bg-slate-200 rounded-lg'>
           <LeftSide />
           <RightSide toggleNav={toggleNav} toggle={toggle} />
           <OpenMenu toggleNav={toggleNav} />

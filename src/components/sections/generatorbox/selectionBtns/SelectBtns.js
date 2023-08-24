@@ -2,13 +2,13 @@ import React from 'react'
 import Select from './Select'
 import Slow from './Slow'
 
-const Buttons = () => {
+const SelectBtns = () => {
   return (
-    <div className='flex'>
+    <div className='flex flex-wrap items-center'>
         <Select/>
         <Slow/>
     </div>
   )
 }
 
-export default Buttons
+export default SelectBtns
