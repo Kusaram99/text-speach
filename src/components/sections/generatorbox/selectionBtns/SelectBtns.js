@@ -1,12 +1,12 @@
 import React from 'react'
-import Select from './Select'
-import Slow from './Slow'
+import VoicesSel from './VoicesSel'
+import SpeedSel from './SpeedSel'
 
 const SelectBtns = () => {
   return (
     <div className='flex flex-wrap items-center'>
-        <Select/>
-        <Slow/>
+        <VoicesSel/>
+        <SpeedSel/>
     </div>
   )
 }

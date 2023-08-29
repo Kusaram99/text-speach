@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Slow = () => {
+const SpeedSel = () => {
     return (
         <div className='mr-5'>
             <select
@@ -17,4 +17,4 @@ const Slow = () => {
     )
 }
 
-export default Slow
+export default SpeedSel
