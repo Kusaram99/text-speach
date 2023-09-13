@@ -1,10 +1,9 @@
-import React from 'react' 
-import GeneratorBox from './generatorbox/GeneratorBox'
+import React from 'react'  
 
 const SectionsCompiler = () => {
   return (
-    <div>
-        <GeneratorBox/>
+    <div> 
+      <GeneratorBox />
     </div>
   )
 }

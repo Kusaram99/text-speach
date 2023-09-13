@@ -1,13 +1,16 @@
 import React from "react";
-import Nav from "./components/nav/Nav"; 
+import Nav from "./components/nav/Nav";
 import GeneratorBox from "./components/sections/generatorbox/GeneratorBox";
+import TextToVoiceProvider from "./components/sections/TextToVoiceProvider";
 
 function App() {
   return (
-    <div>
-      <Nav/>
-      <GeneratorBox/>
-    </div>
+    <>
+      <TextToVoiceProvider>
+        <Nav />
+        <GeneratorBox />
+      </TextToVoiceProvider>
+    </>
   );
 }
 

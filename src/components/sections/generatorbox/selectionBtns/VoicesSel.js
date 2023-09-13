@@ -1,19 +1,24 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import useTextToVoice from '../../useTextToVoice'
+import { UseContext } from '../../TextToVoiceProvider';
 
 const VoicesSel = () => {
+  // iterating usecontext values
+  const { voiceSettings, setVoiceSettings } = UseContext();
+  // iterating voicess
   const { voices } = useTextToVoice();
 
-  // console.log("voices: ", voices)
-  useEffect(() => {
-    // getVoices();
-  }, [])
+  // voice handler function
+  const voiceHandler = (value) => {
+    setVoiceSettings({ ...voiceSettings, selectedVoice: value.target.value });
+  }
 
   return (
     <div className='mr-7'>
       <select
         defaultValue="default"
-        className='px-4 py-3 my-1 rounded-lg outline-none border-x-4 border-x-sky-400 bg-green-50 shadow-lg'>
+        className='px-4 py-3 my-1 rounded-lg outline-none border-x-4 border-x-sky-400 bg-green-50 shadow-lg'
+        onChange={voiceHandler}>
         <option
           className='px-2 py-3 rounded-lg'
           value="default"
