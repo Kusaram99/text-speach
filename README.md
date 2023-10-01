@@ -26,14 +26,14 @@ Follow these simple steps to download and run the application locally:
 
 2. **Install Dependencies:**
 
-   -Navigate to the project directory in your terminal.
-   -Install the required dependencies by running:
+   - Navigate to the project directory in your terminal.
+   - Install the required dependencies by running:
 
    ```bash
    npm install
 
 3. **Start the Application:**
-  -To launch the application on a local development server, run:
+  - To launch the application on a local development server, run:
 
   ```bash
   npm start
