@@ -1,21 +1,13 @@
 import React from 'react'
 import Heading from './Heading'
 import SelectBtns from './selectionBtns/SelectBtns'
-import TextArea from './TextArea'
-import Music from './Music'
+import TextArea from './TextArea' 
 import { useState } from 'react'
 import GenerateBtn from './GenerateBtn'
-import Alert from './Alert'
-import { UseContext } from '../TextToVoiceProvider'
+import Alert from './Alert' 
 
-const GeneratorBox = () => {
-    // iterate usecontext values
-    // const { voiceSettings, setVoiceSettings } = UseContext();
-    const [alertData, setAlertData] = useState({ alert: null });
-    // // alert handler functions 
-    // const alertHandler =(value)=>{
-    //     console.log("alertFun: ", value);
-    // }
+const GeneratorBox = () => { 
+    const [alertData, setAlertData] = useState({ alert: null }); 
 
     return (
         <section className='my-12 relative'>
@@ -25,8 +17,7 @@ const GeneratorBox = () => {
                     <Heading />
                     <SelectBtns />
                     <TextArea />
-                    <GenerateBtn alertObj={{ alertData, setAlertData }} />
-                    <Music />
+                    <GenerateBtn alertObj={{ alertData, setAlertData }} /> 
                 </div>
             </div>
         </section>

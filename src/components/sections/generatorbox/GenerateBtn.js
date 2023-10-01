@@ -4,7 +4,7 @@ import useTextToVoice from '../useTextToVoice';
 
 const GenerateBtn = ({ alertObj }) => {
   // iterate function of useTextToVoice hooks
-  const { voices, generateSpeech } = useTextToVoice();
+  const { voices, generateSpeech} = useTextToVoice();
 
   // iterate context api values
   const { voiceSettings } = UseContext();
@@ -12,8 +12,8 @@ const GenerateBtn = ({ alertObj }) => {
   const { alertData, setAlertData } = alertObj;
 
   // generator button handler
-  const generatorBtn = () => { 
-    console.log(voices)
+  const generatorBtn = async() => { 
+    // console.log(voices)
     // check voiceSettings all properties are selected or not
     if (!voiceSettings.selectedVoice) {
       setAlertData({ ...alertData, message: "Please select the voice", alert: true });
@@ -22,8 +22,8 @@ const GenerateBtn = ({ alertObj }) => {
       const { text, selectedVoice, rate } = voiceSettings;
       const voiceObj = voices.find(voice => voice.name === selectedVoice);
       // console.log(voices[0]);
-      generateSpeech(text, voiceObj, rate) ;
-      // generateSpeech("Hello, this is a test.", voices[0], 1, 1);
+      console.log("inBtn: ", voiceObj)
+       generateSpeech(text, voiceObj, rate) ; 
     }
   }
 

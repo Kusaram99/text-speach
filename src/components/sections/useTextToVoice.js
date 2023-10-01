@@ -22,15 +22,15 @@ const useTextToVoice = () => {
 
     // text to voice generator function
     const generateSpeech = (text, selectedVoice, rate = 1) => {
-        // const allVoices = window.speechSynthesis.getVoices();
-        // console.log("generateSpeech function", text," ",allVoices[0]," ",rate)
+        // Stop any ongoing speech synthesis
+        window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance();
         utterance.voice = selectedVoice;    // 
         utterance.rate = rate;              //speed  
         utterance.text = text;              //speech's text
         window.speechSynthesis.speak(utterance); // Trigger the speech synthesis engine to speak the provided text.
     };
- 
+
     // return voices array and functions for generate voice
     return {
         voices,

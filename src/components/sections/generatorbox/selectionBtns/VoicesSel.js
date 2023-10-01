@@ -26,7 +26,9 @@ const VoicesSel = () => {
         </option>
         {voices.length > 0 ?
           voices.map((elem, ind) => (
-            <option key={ind} value={elem.name}>{elem.name}</option>
+            <option key={ind} value={elem.name}>
+              {elem.name.split(' ').length > 3 ? elem.name.split(' ').slice(-3).join(' ') : elem.name.split(' ').slice(-2).join(' ')}
+            </option>
           )) :
           <option disabled>
             Voices Not Found!
