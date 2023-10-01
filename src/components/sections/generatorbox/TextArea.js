@@ -18,7 +18,7 @@ const TextArea = () => {
     <div className='my-6'>
       <textarea
         ref={ref}
-        defaultValue="If you are tired to read books so now you are on the right platform, I will help you to convert text to voice in any language."
+        defaultValue="Hi, if you are tired of reading books then now you are on the right platform, I will help you to convert text to voice in any language. You just have to copy-paste the content here"
         className='w-full h-48 rounded-lg px-4 py-3 outline-none shadow-lg border-x-4 border-x-sky-400 bg-green-50'
         onChange={onChangeHandler}></textarea>
     </div>
