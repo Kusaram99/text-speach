@@ -6,7 +6,7 @@ const Footer = () => {
             <div className='flex justify-center items-center'>
                 <a
                 className='flex justify-center items-center'
-                    href='https://github.com/rampawara99?tab=repositories'
+                    href='https://github.com/rampawara99/text-speach'
                     target='_blank'>
                     <i className="lab la-github text-3xl"></i>
                 </a>
