@@ -7,10 +7,39 @@ The Text-to-Voice Converter is a web application developed using React.js, Tailw
 
 ## Table of Contents
 
+- [How to Download and Run the Application](#How-to-Download-and-Run-the-Application)
 - [Key Features](#key-features)
 - [Educational Benefits](#educational-benefits)
 - [How to Contribute](#how-to-contribute)
 - [Conclusion](#Conclusion) 
+
+## How to Download and Run the Application
+
+Follow these simple steps to download and run the application locally:
+
+1. **Clone the Repository:**
+   - Create a directory where you want to download the project.
+   - Use the following command to clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/rampawara99/text-speach.git
+
+2. **Install Dependencies:**
+
+   -Navigate to the project directory in your terminal.
+   -Install the required dependencies by running:
+
+   ```bash
+   npm install
+
+3. **Start the Application:**
+  -To launch the application on a local development server, run:
+
+  ```bash
+  npm start
+
+The application will be accessible at http://localhost:3000.
+
 
 ## Key Features
 
