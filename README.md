@@ -33,13 +33,13 @@ Follow these simple steps to download and run the application locally:
    npm install
 
 3. **Start the Application:**
-  - To launch the application on a local development server, run:
+    - To launch the application on a local development server, run:
 
-  ```bash
-  npm start
+   ```bash
+   npm start
 
 
-The application will be accessible at http://localhost:3000.
+- The application will be accessible at http://localhost:3000.
 
 ## Key Features
 
