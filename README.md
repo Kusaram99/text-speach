@@ -38,8 +38,8 @@ Follow these simple steps to download and run the application locally:
   ```bash
   npm start
 
-The application will be accessible at http://localhost:3000.
 
+The application will be accessible at http://localhost:3000.
 
 ## Key Features
 
