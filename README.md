@@ -1,5 +1,7 @@
 # Text-to-Voice Converter React Application
- 
+
+### Demo
+- [https://text-speach.vercel.app/](https://text-speach.vercel.app/); 
 
 ## Overview
 
@@ -22,7 +24,7 @@ Follow these simple steps to download and run the application locally:
    - Use the following command to clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/rampawara99/text-speach.git
+   git clone https://github.com/Kusaram99/text-speach.git
 
 2. **Install Dependencies:**
 
